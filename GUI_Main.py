@@ -1,5 +1,5 @@
 """
-@author: Parag Moteria, Machine Learning Consultant
+@author: Parag Moteria, Machine Learning Specialist & Consultant
 
 email-id : paragmoteria@gmail.com
 """
@@ -76,8 +76,7 @@ def cleanData():
         os.mkdir("imputedData")
     path = os.getcwd() + "\\imputedData\\imputeMissingVal.csv"
     df1.to_csv(path)
-    scr.insert(tk.INSERT, '\n\n Cleaning Data by Imputing Missing Value \
-               using Median ... \n\n')
+    scr.insert(tk.INSERT, '\n\n Imputing Missing Value using Median ... \n\n')
     scr.insert(tk.INSERT, df1.describe())
 
 
