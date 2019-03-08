@@ -63,15 +63,14 @@ def corr2():
         scr.insert(tk.INSERT, np.corrcoef(df1[val1], df1[val2]))
         scr.insert(tk.INSERT, '\n\n')
     else:
-        scr.insert(tk.INSERT, 'Alert!, select only one variable from \
-                   Indepedent Variable list')
+        scr.insert(tk.INSERT, 'Alert!, select only one Independent Variable')
         scr.insert(tk.INSERT, '\n\n')
 
 
 def RegAna():
     '''
     Compute Multiple Regression Model
-    User select one Depedended Varaible and one or more Indepedend Variable(s)
+    User select one Depedended Varaible and one or more Independent Variable(s)
     '''
     val1 = combo1.get()
     dep_var = val1.split(" ")
@@ -86,7 +85,7 @@ def RegAna():
         scr.insert(tk.INSERT, result.summary())
         scr.insert(tk.INSERT, '\n\n')
     else:
-        scr.insert(tk.INSERT, 'Alert!, Select Indepedent Variable(s)')
+        scr.insert(tk.INSERT, 'Alert!, Select Independent Variable(s)')
         scr.insert(tk.INSERT, '\n\n')
 
 
@@ -111,7 +110,7 @@ def resPlot():
         plt.show()
         scr.insert(tk.INSERT, '\n\n')
     else:
-        scr.insert(tk.INSERT, 'Alert!, Select Indepedent Variable(s)')
+        scr.insert(tk.INSERT, 'Alert!, Select Independent Variable(s)')
         scr.insert(tk.INSERT, '\n\n')
 
 
@@ -136,7 +135,7 @@ def probPlot():
         plt.show()
         scr.insert(tk.INSERT, '\n\n')
     else:
-        scr.insert(tk.INSERT, 'Alert!, Select Indepedent Variable(s)')
+        scr.insert(tk.INSERT, 'Alert!, Select Independent Variable(s)')
         scr.insert(tk.INSERT, '\n\n')
 
 
@@ -156,8 +155,7 @@ def scatterPlot():
         plt.show()
         scr.insert(tk.INSERT, '\n\n')
     else:
-        scr.insert(tk.INSERT, 'Alert!, select maximum three variables from \
-                   Indepedent Variable list')
+        scr.insert(tk.INSERT, 'Alert!, Maximum Three Independent Variables')
         scr.insert(tk.INSERT, '\n\n')
 
 
