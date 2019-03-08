@@ -19,8 +19,8 @@ Python's Library for GUI: tkinter
 
 Sample data-file having data from UCI Machine Learning Repository.
 
-Q. How to use this tool?
+Q. How to use this tool?  
 A. Run GUI_Main.py file
 
-Q. How data is access for Regression Analysis?
+Q. How data is access for Regression Analysis?  
 A. From your data directory, we can access our data. Data should be stored in CSV file. Sample CSV file is available in data directory.
